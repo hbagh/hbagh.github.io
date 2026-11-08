@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr.-Ing. Hossein Bagheri | Associate Professor in Geomatics Engineering & GeoAI</title>
+    <meta name="description" content="Academic Website of Dr.-Ing. Hossein Bagheri, Associate Professor at the Department of Geomatics Engineering, University of Isfahan, Iran.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0f172a',
+                        accent: '#0284c7',
+                        accentDark: '#0369a1',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts: Plus Jakarta Sans (Clean Modern Body) & Lora (Scholarly Serif Headings) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome & Academicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+    <style>
+        body { 
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif; 
+            letter-spacing: -0.01em;
+        }
+        h1, h2, .serif-heading { 
+            font-family: 'Lora', Georgia, serif; 
+            letter-spacing: -0.015em;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-sky-600 selection:text-white">
+
+    <!-- Top Navigation Bar (Mobile & Desktop) -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="#about" class="font-bold text-lg text-slate-900 serif-heading">Dr.-Ing. Hossein Bagheri</a>
+                <nav class="hidden xl:flex space-x-6 text-sm font-semibold text-slate-600">
+                    <a href="#about" class="hover:text-sky-600 transition">About</a>
+                    <a href="#experience" class="hover:text-sky-600 transition">Experience & Edu</a>
+                    <a href="#grants-awards" class="hover:text-sky-600 transition">Grants & Awards</a>
+                    <a href="#projects" class="hover:text-sky-600 transition">Projects</a>
+                    <a href="#teaching" class="hover:text-sky-600 transition">Teaching</a>
+                    <a href="#theses" class="hover:text-sky-600 transition">Theses</a>
+                    <a href="#skills-services" class="hover:text-sky-600 transition">Skills & Services</a>
+                    <a href="#publications" class="hover:text-sky-600 transition">Publications</a>
+                </nav>
+                <!-- Mobile Menu Button -->
+                <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="xl:hidden text-slate-600 hover:text-slate-900 focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden xl:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-4 space-y-2 text-sm font-medium text-slate-700">
+            <a href="#about" class="block py-1 hover:text-sky-600">About & Research Interests</a>
+            <a href="#experience" class="block py-1 hover:text-sky-600">Experience, Education & Admin</a>
+            <a href="#grants-awards" class="block py-1 hover:text-sky-600">Grants, Awards & Honors</a>
+            <a href="#projects" class="block py-1 hover:text-sky-600">Research Projects</a>
+            <a href="#teaching" class="block py-1 hover:text-sky-600">Teaching Experience</a>
+            <a href="#theses" class="block py-1 hover:text-sky-600">Theses Supervision</a>
+            <a href="#skills-services" class="block py-1 hover:text-sky-600">Skills, Talks, Editorial & Coop</a>
+            <a href="#publications" class="block py-1 hover:text-sky-600">Publications</a>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+            
+            <!-- Left Sidebar (Profile & Contact) -->
+            <aside class="lg:col-span-4 xl:col-span-3 mb-8 lg:mb-0">
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 lg:sticky lg:top-24">
+                    <div class="flex flex-col items-center text-center">
+                        <!-- Profile Picture (Make sure profile.png is in the same folder) -->
+                        <img src="profile.png" alt="Dr.-Ing. Hossein Bagheri" class="w-40 h-40 rounded-full object-cover border-4 border-sky-50 shadow-md mb-4">
+                        <h1 class="text-xl font-bold text-slate-900">Dr.-Ing. Hossein Bagheri</h1>
+                        <p class="text-sky-700 font-semibold text-sm mt-1">Associate Professor</p>
+                        <p class="text-slate-600 text-xs mt-1 leading-relaxed">Department of Geomatics Engineering,<br>University of Isfahan, Iran</p>
+                    </div>
+
+                    <hr class="my-5 border-slate-200">
+
+                    <!-- Contact Information -->
+                    <div class="space-y-3.5 text-sm text-slate-700">
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-map-marker-alt text-sky-600 mt-1 w-4 text-center shrink-0"></i>
+                            <span class="text-xs leading-relaxed text-slate-700">
+                                Faculty of Civil Engineering and Transportation, Main Building, Room 11, University of Isfahan, Iran
+                            </span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-phone-alt text-sky-600 w-4 text-center shrink-0"></i>
+                            <a href="tel:+9837137935299" class="hover:text-sky-600 transition text-xs sm:text-sm font-medium">+98 37137935299</a>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-envelope text-sky-600 mt-1 w-4 text-center shrink-0"></i>
+                            <div class="flex flex-col break-all text-xs sm:text-sm">
+                                <a href="mailto:h.bagheri@cet.ui.ac.ir" class="hover:text-sky-600 transition font-medium">h.bagheri@cet.ui.ac.ir</a>
+                                <a href="mailto:h.bagheri.en@gmail.com" class="hover:text-sky-600 transition text-slate-500 text-xs mt-0.5">h.bagheri.en@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="my-5 border-slate-200">
+
+                    <!-- Academic & Social Links -->
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">Academic Profiles</h3>
+                    <div class="grid grid-cols-2 gap-2 text-xs font-semibold">
+                        <a href="https://scholar.google.com/citations?user=1n9JEt0AAAAJ&hl=en" target="_blank" rel="noopener" class="flex items-center space-x-2 p-2 rounded-lg bg-slate-50 hover:bg-sky-50 hover:text-sky-700 border border-slate-200 transition">
+                            <i class="ai ai-google-scholar text-base text-sky-600"></i>
+                            <span>Scholar</span>
+                        </a>
+                        <a href="https://www.scopus.com/authid/detail.uri?authorId=56153105600" target="_blank" rel="noopener" class="flex items-center space-x-2 p-2 rounded-lg bg-slate-50 hover:bg-sky-50 hover:text-sky-700 border border-slate-200 transition">
+                            <i class="ai ai-scopus text-base text-orange-600"></i>
+                            <span>Scopus</span>
+                        </a>
+                        <a href="https://www.researchgate.net/profile/Hossein-Bagheri-4?ev=hdr_xprf" target="_blank" rel="noopener" class="flex items-center space-x-2 p-2 rounded-lg bg-slate-50 hover:bg-sky-50 hover:text-sky-700 border border-slate-200 transition">
+                            <i class="ai ai-researchgate text-base text-teal-600"></i>
+                            <span>ResearchGate</span>
+                        </a>
+                        <a href="https://orcid.org/0000-0002-9599-230X" target="_blank" rel="noopener" class="flex items-center space-x-2 p-2 rounded-lg bg-slate-50 hover:bg-sky-50 hover:text-sky-700 border border-slate-200 transition">
+                            <i class="ai ai-orcid text-base text-lime-600"></i>
+                            <span>ORCID</span>
+                        </a>
+                        <a href="https://github.com/hbagh" target="_blank" rel="noopener" class="flex items-center space-x-2 p-2 rounded-lg bg-slate-50 hover:bg-sky-50 hover:text-sky-700 border border-slate-200 transition">
+                            <i class="fab fa-github text-base text-slate-800"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/hossein-bagheri/?isSelfProfile=true" target="_blank" rel="noopener" class="flex items-center space-x-2 p-2 rounded-lg bg-slate-50 hover:bg-sky-50 hover:text-sky-700 border border-slate-200 transition">
+                            <i class="fab fa-linkedin text-base text-blue-700"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Right Main Content Area -->
+            <main class="lg:col-span-8 xl:col-span-9 space-y-10">
+
+                <!-- 1. Professional Summary & Research Interests -->
+                <section id="about" class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 sm:p-8">
+                    <h2 class="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-3 mb-4 flex items-center gap-2.5">
+                        <i class="fas fa-user-tie text-sky-600 text-xl"></i> Professional Summary
+                    </h2>
+                    <div class="space-y-4 text-slate-700 leading-relaxed text-justify text-[15px]">
+                        <p>
+                            I am an Associate Professor in the Department of Geomatics Engineering at the University of Isfahan, Iran. My research focuses on the application of machine learning and deep learning to geospatial data analysis, Earth observation, and remote sensing. In particular, my work involves developing intelligent methods for environmental monitoring and assessment using multisource and multisensor geospatial data.
+                        </p>
+                        <p>
+                            I received my Ph.D. (Dr.-Ing.) in Data Science in Earth Observation—formerly known as Signal Processing in Earth Observation—from the Technical University of Munich (TUM), Germany. I have authored and co-authored numerous scientific publications in international journals and conference proceedings. I also teach and supervise undergraduate, master’s, and doctoral students in AI, remote sensing, geospatial data mining, photogrammetry, image analysis, and related fields.
+                        </p>
+                    </div>
+
+                    <h3 class="text-lg font-bold text-slate-900 mt-8 mb-4 flex items-center gap-2 serif-heading">
+                        <i class="fas fa-compass text-sky-600"></i> Research Interests
+                    </h3>
+                    <div class="grid sm:grid-cols-2 gap-3">
+                        <div class="flex items-center space-x-3 p-3.5 rounded-xl bg-sky-50/70 border border-sky-100 text-slate-800 font-semibold text-sm">
+                            <i class="fas fa-brain text-sky-600 w-5 text-center shrink-0"></i>
+                            <span>GeoAI, Machine Learning, Deep Learning</span>
+                        </div>
+                        <div class="flex items-center space-x-3 p-3.5 rounded-xl bg-sky-50/70 border border-sky-100 text-slate-800 font-semibold text-sm">
+                            <i class="fas fa-satellite text-sky-600 w-5 text-center shrink-0"></i>
+                            <span>Remote Sensing, Earth Observation</span>
+                        </div>
+                        <div class="flex items-center space-x-3 p-3.5 rounded-xl bg-sky-50/70 border border-sky-100 text-slate-800 font-semibold text-sm">
+                            <i class="fas fa-globe-americas text-sky-600 w-5 text-center shrink-0"></i>
+                            <span>Environmental Modeling and Monitoring</span>
+                        </div>
+                        <div class="flex items-center space-x-3 p-3.5 rounded-xl bg-sky-50/70 border border-sky-100 text-slate-800 font-semibold text-sm">
+                            <i class="fas fa-city text-sky-600 w-5 text-center shrink-0"></i>
+                            <span>Urban Analytics and Environmental Sustainability</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 2. Academic Experience, Education & Administrative Roles -->
+                <section id="experience" class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 sm:p-8 space-y-8">
+                    <!-- Academic Experience -->
+                    <div>
+                        <h2 class="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-3 mb-5 flex items-center gap-2.5">
+                            <i class="fas fa-briefcase text-sky-600 text-xl"></i> Academic Experience
+                        </h2>
+                        <div class="space-y-4">
+                            <div class="flex flex-col sm:flex-row sm:justify-between p-4 rounded-xl bg-slate-50 border border-slate-200/80">
+                                <div>
+                                    <h3 class="font-bold text-slate-900">Associate Professor</h3>
+                                    <p class="text-sm text-slate-600 mt-0.5">Department of Geomatics Engineering, University of Isfahan, Iran</p>
+                                </div>
+                                <span class="text-xs font-semibold text-sky-700 bg-sky-100 px-3 py-1 rounded-full h-fit mt-2 sm:mt-0 w-fit">2026 – Present</span>
+                            </div>
+                            <div class="flex flex-col sm:flex-row sm:justify-between p-4 rounded-xl bg-slate-50 border border-slate-200/80">
+                                <div>
+                                    <h3 class="font-bold text-slate-900">Assistant Professor</h3>
+                                    <p class="text-sm text-slate-600 mt-0.5">Department of Geomatics Engineering, University of Isfahan, Iran</p>
+                                </div>
+                                <span class="text-xs font-semibold text-slate-700 bg-slate-200 px-3 py-1 rounded-full h-fit mt-2 sm:mt-0 w-fit">2020 – 2026</span>
+                            </div>
+                            <div class="flex flex-col sm:flex-row sm:justify-between p-4 rounded-xl bg-slate-50 border border-slate-200/80">
+                                <div>
+                                    <h3 class="font-bold text-slate-900">Research Assistant</h3>
+                                    <p class="text-sm text-slate-600 mt-0.5">Earth Observation Data Science Department, German Aerospace Center (DLR), Germany</p>
+                                </div>
+                                <span class="text-xs font-semibold text-slate-700 bg-slate-200 px-3 py-1 rounded-full h-fit mt-2 sm:mt-0 w-fit">2017 – 2020</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education -->
+                    <div>
+                        <h2 class="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-3 mb-5 flex items-center gap-2.5">
+                            <i class="fas fa-graduation-cap text-sky-600 text-xl"></i> Education
+                        </h2>
+                        <div class="space-y-4">
+                            <div class="flex flex-col sm:flex-row sm:justify-between p-4 rounded-xl bg-slate-50 border border-slate-200/80">
+                                <div>
+                                    <h3 class="font-bold text-slate-900">PhD (Dr.-Ing.) in Data Science in Earth Observation</h3>
+                                    <p class="text-sm text-slate-600 mt-0.5">Technical University of Munich (TUM), Munich, Germany</p>
+                                </div>
+                                <span class="text-xs font-semibold text-slate-700 bg-slate-200 px-3 py-1 rounded-full h-fit mt-2 sm:mt-0 w-fit">2016 – 2020</span>
+                            </div>
+                            <div class="flex flex-col sm:flex-row sm:justify-between p-4 rounded-xl bg-slate-50 border border-slate-200/80">
+                                <div>
+                                    <h3 class="font-bold text-slate-900">MSc in Civil Engineering, Geomatics, Photogrammetry</h3>
+                                    <p class="text-sm text-slate-600 mt-0.5">Amirkabir University of Technology (Tafresh Campus), Tafresh, Iran</p>
+                                </div>
+                                <span class="text-xs font-semibold text-slate-700 bg-slate-200 px-3 py-1 rounded-full h-fit mt-2 sm:mt-0 w-fit">2011 – 2013</span>
+                            </div>
+                            <div class="flex flex-col sm:flex-row sm:justify-between p-4 rounded-xl bg-slate-50 border border-slate-200/80">
+                                <div>
+                                    <h3 class="font-bold text-slate-900">BSc in Civil Engineering, Geomatics</h3>
+                                    <p class="text-sm text-slate-600 mt-0.5">Amirkabir University of Technology (Tafresh Campus), Tafresh, Iran</p>
+                                </div>
+                                <span class="text-xs font-semibold text-slate-700 bg-slate-200 px-3 py-1 rounded-full h-fit mt-2 sm:mt-0 w-fit">2007 – 2010</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Administrative Roles -->
+                    <div>
+                        <h2 class="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-3 mb-5 flex items-center gap-2.5">
+                            <i class="fas fa-university text-sky-600 text-xl"></i> Administrative Roles
+                        </h2>
+                        <div class="space-y-3">
+                            <div class="flex flex-col sm:flex-row sm:justify-between p-4 rounded-xl bg-slate-50 border border-slate-200/80">
+                                <p class="text-sm font-medium text-slate-800 sm:pr-4">Member of the Curriculum Revision Committee for Geomatics Engineering, Office of Development and Planning of Higher Education, Ministry of Science, Research and Technology, Iran.</p>
+                                <span class="text-xs font-semibold text-sky-700 bg-sky-100 px-3 py-1 rounded-full h-fit mt-2 sm:mt-0 whitespace-nowrap w-fit">2024 – Present</span>
+                            </div>
+                            <div class="flex flex-col sm:flex-row sm:justify-between p-4 rounded-xl bg-slate-50 border border-slate-200/80">
+                                <p class="text-sm font-medium text-slate-800 sm:pr-4">Head of the Department of Geomatics Engineering, University of Isfahan</p>
+                                <span class="text-xs font-semibold text-sky-700 bg-sky-100 px-3 py-1 rounded-full h-fit mt-2 sm:mt-0 whitespace-nowrap w-fit">2024 – Present</span>
+                            </div>
+                            <div class="flex flex-col sm:flex-row sm:justify-between p-4 rounded-xl bg-slate-50 border border-slate-200/80">
+                                <p class="text-sm font-medium text-slate-800 sm:pr-4">Research Deputy, Department of Geomatics Engineering, University of Isfahan</p>
+                                <span class="text-xs font-semibold text-slate-700 bg-slate-200 px-3 py-1 rounded-full h-fit mt-2 sm:mt-0 whitespace-nowrap w-fit">2022 – 2024</span>
+                            </div>
+                            <div class="flex flex-col sm:flex-row sm:justify-between p-4 rounded-xl bg-slate-50 border border-slate-200/80">
+                                <p class="text-sm font-medium text-slate-800 sm:pr-4">Member of the Internationalization Committee, Faculty of Civil Engineering and Transportation, University of Isfahan</p>
+                                <span class="text-xs font-semibold text-slate-700 bg-slate-200 px-3 py-1 rounded-full h-fit mt-2 sm:mt-0 whitespace-nowrap w-fit">2020 – 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 3. Grants, Awards, and Honors -->
+                <section id="grants-awards" class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 sm:p-8 space-y-6">
+                    <h2 class="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-3 flex items-center gap-2.5">
+                        <i class="fas fa-award text-sky-600 text-xl"></i> Grants, Awards, and Honors
+                    </h2>
+
+                    <!-- Grants -->
+                    <div>
+                        <h3 class="text-lg font-bold text-sky-800 mb-3 serif-heading">Grants</h3>
+                        <div class="p-4 rounded-xl bg-sky-50/50 border border-sky-100">
+                            <div class="flex flex-wrap justify-between items-start gap-2 mb-1">
+                                <span class="font-bold text-slate-900">Iran National Science Foundation (INSF) (Proposal No. 40502837)</span>
+                                <span class="text-xs font-semibold text-sky-700 bg-sky-100 px-2.5 py-1 rounded-full">2026 – Present</span>
+                            </div>
+                            <p class="text-sm text-slate-700 italic">"Estimation of deforestation in two and three dimensions using optical, Radar, and LiDAR data with deep and machine learning."</p>
+                            <p class="text-xs font-semibold text-slate-600 mt-2">Role: Principal Investigator.</p>
+                        </div>
+                    </div>
+
+                    <!-- Awards -->
+                    <div>
+                        <h3 class="text-lg font-bold text-sky-800 mb-3 serif-heading">Awards</h3>
+                        <div class="space-y-3">
+                            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80">
+                                <div class="flex flex-wrap justify-between items-start gap-2">
+                                    <span class="font-bold text-slate-900 text-sm">Best Paper Award, International Journal of Image and Data Fusion (Taylor & Francis)</span>
+                                    <span class="text-xs font-semibold text-slate-700 bg-slate-200 px-2.5 py-0.5 rounded-full">2024 – 2025</span>
+                                </div>
+                                <p class="text-sm text-slate-700 mt-1">Awarded for the co-authored paper: "Assessment of Explainable Tree-Based Ensemble Algorithms for the Enhancement of Copernicus Digital Elevation Model in Agricultural Lands" <a href="https://doi.org/10.1080/19479832.2024.2369668" target="_blank" class="text-sky-600 underline font-medium">[Link]</a></p>
+                                <p class="text-xs text-slate-500 mt-1">Co-authored with Okolie, C., Adeleke, A., Mills, J., Smit, J., Maduako, I., Komar, T. & Wang, S.</p>
+                            </div>
+
+                            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80">
+                                <div class="flex flex-wrap justify-between items-start gap-2">
+                                    <span class="font-bold text-slate-900 text-sm">Semi-Finalist, III International Student and Young Scientist Project Competition</span>
+                                    <span class="text-xs font-semibold text-slate-700 bg-slate-200 px-2.5 py-0.5 rounded-full">Oct. 2026</span>
+                                </div>
+                                <p class="text-sm text-slate-700 mt-1">"SMART CITY 2030: Sustainable Urban Development Management in BRICS Countries".</p>
+                                <p class="text-xs text-slate-500 mt-1">Collaborated with Ganjirad M., Delavar M.R., Azizi M.M.</p>
+                            </div>
+
+                            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80">
+                                <div class="flex flex-wrap justify-between items-start gap-2">
+                                    <span class="font-bold text-slate-900 text-sm">Best Paper Award, The 10th Regional Conference on Climate Change and Global Warming (IASBS, Zanjan, Iran)</span>
+                                    <span class="text-xs font-semibold text-slate-700 bg-slate-200 px-2.5 py-0.5 rounded-full">Feb. 2026</span>
+                                </div>
+                                <p class="text-sm text-slate-700 mt-1">Awarded for the paper: "Performance Comparison of U-Net-Based Deep Learning Models in Amazon and Atlantic Forests Using Sentinel-2 Data"</p>
+                                <p class="text-xs text-slate-500 mt-1">Co-authored with Manzouri F.</p>
+                            </div>
+
+                            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80">
+                                <div class="flex flex-wrap justify-between items-start gap-2">
+                                    <span class="font-bold text-slate-900 text-sm">Best Paper Award, The 10th Regional Conference on Climate Change and Global Warming (IASBS, Zanjan, Iran)</span>
+                                    <span class="text-xs font-semibold text-slate-700 bg-slate-200 px-2.5 py-0.5 rounded-full">Feb. 2026</span>
+                                </div>
+                                <p class="text-sm text-slate-700 mt-1">Awarded for the paper: "Aboveground Biomass Estimation for Carbon Monitoring in Urban Areas using Airborne LiDAR Data"</p>
+                                <p class="text-xs text-slate-500 mt-1">Co-authored with Shahsavari Z.</p>
+                            </div>
+
+                            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80">
+                                <div class="flex flex-wrap justify-between items-start gap-2">
+                                    <span class="font-bold text-slate-900 text-sm">Best Paper Award, The 10th Regional Conference on Climate Change and Global Warming (IASBS, Zanjan, Iran)</span>
+                                    <span class="text-xs font-semibold text-slate-700 bg-slate-200 px-2.5 py-0.5 rounded-full">Feb. 2026</span>
+                                </div>
+                                <p class="text-sm text-slate-700 mt-1">Awarded for the paper: "Downscaling ERA5-Land air temperature using remote sensing and machine learning techniques"</p>
+                                <p class="text-xs text-slate-500 mt-1">Co-authored with Zarei F.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Honors -->
+                    <div>
+                        <h3 class="text-lg font-bold text-sky-800 mb-3 serif-heading">Honors</h3>
+                        <div class="grid sm:grid-cols-2 gap-3">
+                            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 flex justify-between items-start gap-2">
+                                <span class="text-sm text-slate-800 font-medium">Best MSc Thesis Award (As Supervisor), Faculty of Civil Engineering and Transportation, University of Isfahan</span>
+                                <span class="text-xs font-semibold text-slate-600 bg-slate-200 px-2 py-0.5 rounded whitespace-nowrap">Dec. 2025</span>
+                            </div>
+                            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 flex justify-between items-start gap-2">
+                                <span class="text-sm text-slate-800 font-medium">Scholarship for Doctoral Study, Technical University of Munich (TUM)</span>
+                                <span class="text-xs font-semibold text-slate-600 bg-slate-200 px-2 py-0.5 rounded whitespace-nowrap">2016</span>
+                            </div>
+                            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 flex justify-between items-start gap-2">
+                                <span class="text-sm text-slate-800 font-medium">Best MSc Thesis Award (Investigator), Amirkabir University of Technology (Tafresh)</span>
+                                <span class="text-xs font-semibold text-slate-600 bg-slate-200 px-2 py-0.5 rounded whitespace-nowrap">Dec. 2013</span>
+                            </div>
+                            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 flex justify-between items-start gap-2">
+                                <span class="text-sm text-slate-800 font-medium">First Class Honors, MSc (2013) and BSc (2010)</span>
+                                <span class="text-xs font-semibold text-slate-600 bg-slate-200 px-2 py-0.5 rounded whitespace-nowrap">2010, 2013</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 4. Research Projects -->
+                <section id="projects" class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 sm:p-8">
+                    <h2 class="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-3 mb-5 flex items-center gap-2.5">
+                        <i class="fas fa-project-diagram text-sky-600 text-xl"></i> Research Projects
+                    </h2>
+                    <div class="space-y-3">
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 flex flex-col sm:flex-row sm:justify-between gap-2">
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-sm">Investigating the Capabilities of Photogrammetry in Documenting Accident and Crime Scenes</h3>
+                                <p class="text-xs text-slate-600 mt-1">University of Isfahan – <span class="font-semibold text-sky-700">Role: Co-Principal Investigator</span></p>
+                            </div>
+                            <span class="text-xs font-semibold text-slate-700 bg-slate-200 px-2.5 py-1 rounded-full h-fit whitespace-nowrap w-fit">2024 – 2026</span>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 flex flex-col sm:flex-row sm:justify-between gap-2">
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-sm">Intelligent Detection and Monitoring of Unauthorized Water Use Using Satellite Imagery and AI</h3>
+                                <p class="text-xs text-slate-600 mt-1">Regional Water Company of Isfahan – <span class="font-semibold text-sky-700">Role: Lead Researcher</span></p>
+                            </div>
+                            <span class="text-xs font-semibold text-slate-700 bg-slate-200 px-2.5 py-1 rounded-full h-fit whitespace-nowrap w-fit">2024 – 2026</span>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 flex flex-col sm:flex-row sm:justify-between gap-2">
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-sm">Mapping Rice Paddies Using Satellite Imagery for Water Allocation Planning</h3>
+                                <p class="text-xs text-slate-600 mt-1">Regional Water Company of Isfahan – <span class="font-semibold text-sky-700">Role: Lead Researcher</span></p>
+                            </div>
+                            <span class="text-xs font-semibold text-slate-700 bg-slate-200 px-2.5 py-1 rounded-full h-fit whitespace-nowrap w-fit">2024 – 2025</span>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 flex flex-col sm:flex-row sm:justify-between gap-2">
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-sm">Evaluation of DEM Accuracy for Flood-Prone Zoning Using Machine Learning</h3>
+                                <p class="text-xs text-slate-600 mt-1">Regional Water Company of Isfahan – <span class="font-semibold text-sky-700">Role: PI/Lead Researcher</span></p>
+                            </div>
+                            <span class="text-xs font-semibold text-slate-700 bg-slate-200 px-2.5 py-1 rounded-full h-fit whitespace-nowrap w-fit">2017 – 2020</span>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 flex flex-col sm:flex-row sm:justify-between gap-2">
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-sm">Stereogrammetric Fusion of Optical and SAR Data for 3D Reconstruction and Terrain Modeling</h3>
+                                <p class="text-xs text-slate-600 mt-1">Technical University of Munich (TUM) & German Aerospace Center (DLR) – <span class="font-semibold text-sky-700">Role: Research Assistant</span></p>
+                            </div>
+                            <span class="text-xs font-semibold text-slate-700 bg-slate-200 px-2.5 py-1 rounded-full h-fit whitespace-nowrap w-fit">2017 – 2020</span>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 flex flex-col sm:flex-row sm:justify-between gap-2">
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-sm">So2Sat Big Data for 4D Global Urban Mapping</h3>
+                                <p class="text-xs text-slate-600 mt-1">Technical University of Munich (TUM) & German Aerospace Center (DLR) – <span class="font-semibold text-sky-700">Role: Research Assistant</span></p>
+                            </div>
+                            <span class="text-xs font-semibold text-slate-700 bg-slate-200 px-2.5 py-1 rounded-full h-fit whitespace-nowrap w-fit">2016 – 2019</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 5. Teaching Experience -->
+                <section id="teaching" class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 sm:p-8">
+                    <h2 class="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-3 mb-5 flex items-center gap-2.5">
+                        <i class="fas fa-chalkboard-teacher text-sky-600 text-xl"></i> Teaching Experience
+                    </h2>
+                    <div class="space-y-6">
+                        <!-- University of Isfahan -->
+                        <div class="p-5 rounded-xl bg-slate-50 border border-slate-200/80">
+                            <div class="flex justify-between items-center mb-4">
+                                <h3 class="font-bold text-slate-900 text-base">University of Isfahan</h3>
+                                <span class="text-xs font-semibold text-sky-700 bg-sky-100 px-3 py-1 rounded-full">2020 – Present</span>
+                            </div>
+                            <div class="grid md:grid-cols-3 gap-4 text-sm">
+                                <div class="bg-white p-4 rounded-lg border border-slate-200">
+                                    <h4 class="font-bold text-sky-800 mb-2.5 border-b pb-1.5">PhD Courses</h4>
+                                    <ul class="list-disc list-outside ml-4 space-y-1.5 text-slate-700 text-xs leading-relaxed">
+                                        <li>Advanced Remote Sensing in GIS</li>
+                                        <li>Artificial Neural Networks</li>
+                                        <li>Advanced Pattern Recognition</li>
+                                        <li>Image Analysis in Photogrammetry</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg border border-slate-200">
+                                    <h4 class="font-bold text-sky-800 mb-2.5 border-b pb-1.5">MSc Courses</h4>
+                                    <ul class="list-disc list-outside ml-4 space-y-1.5 text-slate-700 text-xs leading-relaxed">
+                                        <li>Machine Learning in Computer vision</li>
+                                        <li>Intelligent Computing</li>
+                                        <li>GeoSpatial Data Mining</li>
+                                        <li>Research Methodology</li>
+                                        <li>3D Processing in Remote Sensing</li>
+                                        <li>3D Spatial Visualization and Augmented Reality</li>
+                                        <li>Sensors and Platforms</li>
+                                        <li>Space Photogrammetry</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg border border-slate-200">
+                                    <h4 class="font-bold text-sky-800 mb-2.5 border-b pb-1.5">BSc Courses</h4>
+                                    <ul class="list-disc list-outside ml-4 space-y-1.5 text-slate-700 text-xs leading-relaxed">
+                                        <li>Fundamentals of Photogrammetry (Theory and Lab)</li>
+                                        <li>Cloud Computing with Google Earth Engine</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TUM & NCC -->
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h3 class="font-bold text-slate-900 text-sm">Technical University of Munich, Munich, Germany</h3>
+                                    <span class="text-xs font-semibold text-slate-700 bg-slate-200 px-2.5 py-0.5 rounded-full whitespace-nowrap">2016 – 2020</span>
+                                </div>
+                                <p class="text-xs font-semibold text-sky-800 mb-1.5">MSc Courses:</p>
+                                <ul class="list-disc list-outside ml-4 text-xs text-slate-700 space-y-1 leading-relaxed">
+                                    <li>Signal Processing: Lab assistant</li>
+                                    <li>E-Space Seminar: Mentor</li>
+                                </ul>
+                            </div>
+
+                            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h3 class="font-bold text-slate-900 text-sm">National Cartographic Center, Tehran, Iran</h3>
+                                    <span class="text-xs font-semibold text-slate-700 bg-slate-200 px-2.5 py-0.5 rounded-full whitespace-nowrap">2014</span>
+                                </div>
+                                <p class="text-xs font-semibold text-sky-800 mb-1.5">BSc Courses:</p>
+                                <ul class="list-disc list-outside ml-4 text-xs text-slate-700 space-y-1 leading-relaxed">
+                                    <li>Image Processing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 6. Theses Supervision & PhD Examination Committee -->
+                <section id="theses" class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 sm:p-8 space-y-6">
+                    <h2 class="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-3 flex items-center gap-2.5">
+                        <i class="fas fa-user-graduate text-sky-600 text-xl"></i> Theses Supervision & Examination
+                    </h2>
+
+                    <!-- PhD Theses -->
+                    <div>
+                        <h3 class="text-lg font-bold text-sky-800 mb-3 serif-heading">PhD Theses Supervision</h3>
+                        <div class="space-y-2.5">
+                            <div class="p-3.5 rounded-xl bg-sky-50/50 border border-sky-100 flex flex-col sm:flex-row sm:justify-between gap-2">
+                                <p class="text-sm text-slate-800 font-medium">Retrieval of Optical Water Quality Parameters from Satellite Imagery Using Probabilistic Machine Learning and Domain Adaptation Approaches, University of Isfahan</p>
+                                <span class="text-xs font-semibold text-sky-700 bg-sky-100 px-2.5 py-1 rounded-full h-fit whitespace-nowrap w-fit">2026 – Present</span>
+                            </div>
+                            <div class="p-3.5 rounded-xl bg-sky-50/50 border border-sky-100 flex flex-col sm:flex-row sm:justify-between gap-2">
+                                <p class="text-sm text-slate-800 font-medium">Estimation of deforestation in two and three dimensions using optical and LiDAR data with deep and machine learning, Department of Geomatics, University of Isfahan</p>
+                                <span class="text-xs font-semibold text-sky-700 bg-sky-100 px-2.5 py-1 rounded-full h-fit whitespace-nowrap w-fit">2026 – Present</span>
+                            </div>
+                            <div class="p-3.5 rounded-xl bg-sky-50/50 border border-sky-100 flex flex-col sm:flex-row sm:justify-between gap-2">
+                                <p class="text-sm text-slate-800 font-medium">Air Pollution Vulnerability Mapping in Tehran's LCZs Using a Land Use Regression (LUR) Model Enhanced with Satellite Data, Department of Geomatics, University of Isfahan</p>
+                                <span class="text-xs font-semibold text-sky-700 bg-sky-100 px-2.5 py-1 rounded-full h-fit whitespace-nowrap w-fit">2026 – Present</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MSc Theses -->
+                    <div>
+                        <h3 class="text-lg font-bold text-sky-800 mb-3 serif-heading">MSc Theses Supervision (15 Theses)</h3>
+                        <div class="space-y-2 max-h-96 overflow-y-auto pr-2">
+                            <div class="p-3 rounded-lg bg-slate-50 border border-slate-200 flex justify-between items-start gap-3">
+                                <p class="text-xs sm:text-sm text-slate-800">Urban Flood Risk Mapping using Enhanced Digital Elevation Model and Precipitation Data, Department of Geomatics, University of Isfahan</p>
+                                <span class="text-xs font-semibold text-sky-700 bg-sky-100 px-2 py-0.5 rounded whitespace-nowrap">2025 – Present</span>
+                            </div>
+                            <div class="p-3 rounded-lg bg-slate-50 border border-slate-200 flex justify-between items-start gap-3">
+                                <p class="text-xs sm:text-sm text-slate-800">Investigating the possibility of using deep learning for mapping flood susceptibility (urban and non-urban areas), University of Isfahan</p>
+                                <span class="text-xs font-semibold text-sky-700 bg-sky-100 px-2 py-0.5 rounded whitespace-nowrap">2024 – Present</span>
+                            </div>
+                            <div class="p-3 rounded-lg bg-slate-50 border border-slate-200 flex justify-between items-start gap-3">
+                                <p class="text-xs sm:text-sm text-slate-800">Investigating the Parameters Influencing PM2.5 Levels in Different Iranian Cities Using Geographically Weighted Regression-Based Methods Considering Environmental Similarities</p>
+                                <span class="text-xs font-semibold text-slate-600 bg-slate-200 px-2 py-0.5 rounded whitespace-nowrap">2024 – 2026</span>
+                            </div>
+                            <div class="p-3 rounded-lg bg-slate-50 border border-slate-200 flex justify-between items-start gap-3">
+                                <p class="text-xs sm:text-sm text-slate-800">Local climate classification using LiDAR, satellite imagery, and volunteered data, Department of Geomatics, University of Isfahan</p>
+                                <span class="text-xs font-semibold text-slate-600 bg-slate-200 px-2 py-0.5 rounded whitespace-nowrap">2023 – 2025</span>
+                            </div>
+                            <div class="p-3 rounded-lg bg-slate-50 border border-slate-200 flex justify-between items-start gap-3">
+                                <p class="text-xs sm:text-sm text-slate-800">Above-ground biomass estimation using optical, SAR, and LiDAR fusion, Department of Geomatics, University of Isfahan</p>
+                                <span class="text-xs font-semibold text-slate-600 bg-slate-200 px-2 py-0.5 rounded whitespace-nowrap">2023 – 2025</span>
+                            </div>
+                            <div class="p-3 rounded-lg bg-slate-50 border border-slate-200 flex justify-between items-start gap-3">
+                                <p class="text-xs sm:text-sm text-slate-800">Preparation of wetland change maps for Isfahan and Markazi Provinces using optical and radar satellite imagery, Department of Geomatics, University of Isfahan</p>
+                                <span class="text-xs font-semibold text-slate-600 bg-slate-200 px-2 py-0.5 rounded whitespace-nowrap">2023 – 2025</span>
+                            </div>
+                            <div class="p-3 rounded-lg bg-slate-50 border border-slate-200 flex justify-between items-start gap-3">
+                                <p class="text-xs sm:text-sm text-slate-800">Evaluation of gully erosion susceptibility using machine learning (Case study: Mianab-Shushtar Watershed), Faculty of Geographical Science and Planning, University of Isfahan</p>
+                                <span class="text-xs font-semibold text-slate-600 bg-slate-200 px-2 py-0.5 rounded whitespace-nowrap">2023 – 2025</span>
+                            </div>
+                            <div class="p-3 rounded-lg bg-slate-50 border border-slate-200 flex justify-between items-start gap-3">
+                                <p class="text-xs sm:text-sm text-slate-800">Individual tree extraction from LiDAR data for biomass estimation in urban areas using machine/deep learning, Department of Geomatics, University of Isfahan</p>
+                                <span class="text-xs font-semibold text-slate-600 bg-slate-200 px-2 py-0.5 rounded whitespace-nowrap">2022 – 2024</span>
+                            </div>
+                            <div class="p-3 rounded-lg bg-slate-50 border border-slate-200 flex justify-between items-start gap-3">
+                                <p class="text-xs sm:text-sm text-slate-800">Intelligent mitigation of urban heat islands based on climate models and machine learning, School of Surveying and Geospatial Engineering, University of Tehran</p>
+                                <span class="text-xs font-semibold text-slate-600 bg-slate-200 px-2 py-0.5 rounded whitespace-nowrap">2022 – 2024</span>
+                            </div>
+                            <div class="p-3 rounded-lg bg-slate-50 border border-slate-200 flex justify-between items-start gap-3">
+                                <p class="text-xs sm:text-sm text-slate-800">Oil spill detection using Sentinel-1 imagery and deep learning, Department of Geomatics, University of Isfahan</p>
+                                <span class="text-xs font-semibold text-slate-600 bg-slate-200 px-2 py-0.5 rounded whitespace-nowrap">2022 – 2024</span>
+                            </div>
+                            <div class="p-3 rounded-lg bg-slate-50 border border-slate-200 flex justify-between items-start gap-3">
+                                <p class="text-xs sm:text-sm text-slate-800">Improving the resolution of solar energy potential maps derived from global DEMs using deep learning, Department of Geomatics, University of Isfahan</p>
+                                <span class="text-xs font-semibold text-slate-600 bg-slate-200 px-2 py-0.5 rounded whitespace-nowrap">2022 – 2024</span>
+                            </div>
+                            <div class="p-3 rounded-lg bg-slate-50 border border-slate-200 flex justify-between items-start gap-3">
+                                <p class="text-xs sm:text-sm text-slate-800">Digital twin for urban microclimate simulation using LiDAR and climate models, Department of Geomatics, University of Isfahan</p>
+                                <span class="text-xs font-semibold text-slate-600 bg-slate-200 px-2 py-0.5 rounded whitespace-nowrap">2021 – 2023</span>
+                            </div>
+                            <div class="p-3 rounded-lg bg-slate-50 border border-slate-200 flex justify-between items-start gap-3">
+                                <p class="text-xs sm:text-sm text-slate-800">Biomass estimation in forest-covered areas using GEDI sensor data, Department of Geomatics, University of Isfahan</p>
+                                <span class="text-xs font-semibold text-slate-600 bg-slate-200 px-2 py-0.5 rounded whitespace-nowrap">2021 – 2023</span>
+                            </div>
+                            <div class="p-3 rounded-lg bg-slate-50 border border-slate-200 flex justify-between items-start gap-3">
+                                <p class="text-xs sm:text-sm text-slate-800">PM2.5 spatio-temporal modeling using multi-sensor AOD fusion, Department of Geomatics, University of Isfahan</p>
+                                <span class="text-xs font-semibold text-slate-600 bg-slate-200 px-2 py-0.5 rounded whitespace-nowrap">2020 – 2022</span>
+                            </div>
+                            <div class="p-3 rounded-lg bg-slate-50 border border-slate-200 flex justify-between items-start gap-3">
+                                <p class="text-xs sm:text-sm text-slate-800">Local climate classification using LiDAR, satellite imagery, and volunteered data, Department of Geomatics, University of Isfahan</p>
+                                <span class="text-xs font-semibold text-slate-600 bg-slate-200 px-2 py-0.5 rounded whitespace-nowrap">2020 – 2022</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PhD Examination Committee -->
+                    <div>
+                        <h3 class="text-lg font-bold text-sky-800 mb-2 serif-heading">PhD Examination Committee</h3>
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 flex justify-between items-center">
+                            <div>
+                                <span class="font-bold text-slate-900 text-sm">PhD Defense:</span>
+                                <span class="text-sm text-slate-700 ml-1">Opponent of more than 9 PhD theses, Department of Geomatics, University of Isfahan</span>
+                            </div>
+                            <span class="text-xs font-semibold text-sky-700 bg-sky-100 px-3 py-1 rounded-full whitespace-nowrap">2020 – Present</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 7. Technical Skills, Workshops, Editorial & International Cooperation -->
+                <section id="skills-services" class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 sm:p-8 space-y-8">
+                    <!-- Technical Skills -->
+                    <div>
+                        <h2 class="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-3 mb-4 flex items-center gap-2.5">
+                            <i class="fas fa-laptop-code text-sky-600 text-xl"></i> Technical Skills
+                        </h2>
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                                <h3 class="font-bold text-sky-800 text-sm mb-2"><i class="fas fa-map-marked-alt mr-1.5"></i> Software</h3>
+                                <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                                    All common geospatial tools such as <strong>QGIS, ArcGIS, FME Desktop, SAGA GIS</strong>, and remote sensing tools, including <strong>ENVI, ESA SNAP, and Pix4D</strong>.
+                                </p>
+                            </div>
+                            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                                <h3 class="font-bold text-sky-800 text-sm mb-2"><i class="fas fa-code mr-1.5"></i> Programming</h3>
+                                <ul class="text-xs sm:text-sm text-slate-700 space-y-1.5 list-disc list-outside ml-4 leading-relaxed">
+                                    <li>Skilled in <strong>Python</strong> (NumPy, Pandas, GeoPandas, Rasterio, GDAL, etc)</li>
+                                    <li><strong>Machine Learning</strong> (Scikit-Learn, AutoML frameworks, XAI, etc.)</li>
+                                    <li><strong>Deep Learning</strong> (PyTorch, TensorFlow, Keras)</li>
+                                    <li>Handling high-dimensional geospatial raster and satellite imagery using different libraries (<strong>Google Earth Engine</strong>).</li>
+                                    <li><strong>Others:</strong> Git Version Control; Docker; Linux, SQL, Latex</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Performed Workshops, Tutorials, and Invited Talks -->
+                    <div>
+                        <h2 class="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-3 mb-4 flex items-center gap-2.5">
+                            <i class="fas fa-microphone-alt text-sky-600 text-xl"></i> Performed Workshops, Tutorials, and Invited Talks
+                        </h2>
+                        <ul class="space-y-2.5 text-sm text-slate-700">
+                            <li class="p-3.5 rounded-xl bg-slate-50 border border-slate-200">
+                                <strong class="text-slate-900">Workshop:</strong> AI in Hydrology – Regional Water Company of Isfahan, Isfahan, Iran, <span class="text-sky-700 font-semibold">Sept.–Aug. 2025</span>
+                            </li>
+                            <li class="p-3.5 rounded-xl bg-slate-50 border border-slate-200">
+                                <strong class="text-slate-900">Workshop:</strong> Big Geospatial Data Processing with Google Earth Engine – University of Isfahan, <span class="text-sky-700 font-semibold">Dec. 2021</span>
+                            </li>
+                            <li class="p-3.5 rounded-xl bg-slate-50 border border-slate-200">
+                                <strong class="text-slate-900">Invited talk:</strong> Fusion of SAR and Optical Data for 3D Building Reconstruction and Local Climate Zone (LCZ) Modeling in Urban Areas, University of Isfahan, <span class="text-sky-700 font-semibold">Dec. 2020</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Editorial and Review Services -->
+                    <div>
+                        <h2 class="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-3 mb-4 flex items-center gap-2.5">
+                            <i class="fas fa-edit text-sky-600 text-xl"></i> Editorial and Review Services
+                        </h2>
+                        <ul class="space-y-2.5 text-sm text-slate-700">
+                            <li class="p-3.5 rounded-lg bg-slate-50 border border-slate-200">
+                                <strong class="text-slate-900">Handling Editor</strong>, <em>Frontiers In Forests And Global Change</em> (since 2026)
+                            </li>
+                            <li class="p-3.5 rounded-lg bg-slate-50 border border-slate-200">
+                                <strong class="text-slate-900">Associate Editor</strong>, <em>Journal of Geoscience and Earth Observation</em> (Since 2025)
+                            </li>
+                            <li class="p-3.5 rounded-lg bg-slate-50 border border-slate-200">
+                                <strong class="text-slate-900">Editorial board member</strong>, <em>International Journal of Engineering and Geosciences</em> (Since 2025)
+                            </li>
+                            <li class="p-3.5 rounded-lg bg-slate-50 border border-slate-200 leading-relaxed">
+                                <strong class="text-slate-900">Peer reviewer</strong> for international journals in Remote Sensing and Earth Observation (e.g., <em>ISPRS Journal of Photogrammetry and Remote Sensing; Ecological Informatics; Remote Sensing; ISPRS International Journal of Geo-Information; IEEE Geoscience and Remote Sensing Letters;</em> etc.)
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- International Cooperation -->
+                    <div>
+                        <h2 class="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-3 mb-3 flex items-center gap-2.5">
+                            <i class="fas fa-globe text-sky-600 text-xl"></i> International Cooperation
+                        </h2>
+                        <p class="text-sm text-slate-600 mb-4">Academic mentoring and research collaboration with international researchers and graduate students through joint research activities and scientific publications (Since 2016).</p>
+                        <div class="grid sm:grid-cols-2 gap-2.5 text-xs sm:text-sm text-slate-800">
+                            <div class="p-3 rounded-lg bg-slate-50 border border-slate-200 flex items-start space-x-2.5">
+                                <i class="fas fa-university text-sky-600 mt-1 shrink-0"></i>
+                                <span>Department of Geoinformatics – Z_GIS, University of Salzburg, Austria</span>
+                            </div>
+                            <div class="p-3 rounded-lg bg-slate-50 border border-slate-200 flex items-start space-x-2.5">
+                                <i class="fas fa-university text-sky-600 mt-1 shrink-0"></i>
+                                <span>The IDEC Institute, Hiroshima University, Japan</span>
+                            </div>
+                            <div class="p-3 rounded-lg bg-slate-50 border border-slate-200 flex items-start space-x-2.5">
+                                <i class="fas fa-university text-sky-600 mt-1 shrink-0"></i>
+                                <span>Arts, Design & Architecture, University of New South Wales, Australia</span>
+                            </div>
+                            <div class="p-3 rounded-lg bg-slate-50 border border-slate-200 flex items-start space-x-2.5">
+                                <i class="fas fa-university text-sky-600 mt-1 shrink-0"></i>
+                                <span>Division of Geomatics, University of Cape Town, Cape Town, South Africa</span>
+                            </div>
+                            <div class="p-3 rounded-lg bg-slate-50 border border-slate-200 flex items-start space-x-2.5">
+                                <i class="fas fa-university text-sky-600 mt-1 shrink-0"></i>
+                                <span>Department of Surveying and Geoinformatics, University of Lagos, Lagos, Nigeria</span>
+                            </div>
+                            <div class="p-3 rounded-lg bg-slate-50 border border-slate-200 flex items-start space-x-2.5">
+                                <i class="fas fa-university text-sky-600 mt-1 shrink-0"></i>
+                                <span>School of Engineering, Newcastle University, Newcastle upon Tyne, UK</span>
+                            </div>
+                            <div class="p-3 rounded-lg bg-slate-50 border border-slate-200 flex items-start space-x-2.5">
+                                <i class="fas fa-university text-sky-600 mt-1 shrink-0"></i>
+                                <span>School of Surveying and Geospatial Engineering, Tehran, Iran</span>
+                            </div>
+                            <div class="p-3 rounded-lg bg-slate-50 border border-slate-200 flex items-start space-x-2.5">
+                                <i class="fas fa-university text-sky-600 mt-1 shrink-0"></i>
+                                <span>Chair of Data Science in Earth Observation, Technical University of Munich, Germany</span>
+                            </div>
+                            <div class="p-3 rounded-lg bg-slate-50 border border-slate-200 flex items-start space-x-2.5 sm:col-span-2">
+                                <i class="fas fa-space-shuttle text-sky-600 mt-1 shrink-0"></i>
+                                <span>Photogrammetry and Image Analysis Department, German Aerospace Center (DLR), Germany</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 8. Publications -->
+                <section id="publications" class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 sm:p-8 space-y-8">
+                    <h2 class="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-3 flex items-center gap-2.5">
+                        <i class="fas fa-book-open text-sky-600 text-xl"></i> Publications
+                    </h2>
+
+                    <!-- Journal Papers (1 - 25) -->
+                    <div>
+                        <h3 class="text-lg font-bold text-sky-800 mb-4 flex items-center gap-2 serif-heading">
+                            <span class="bg-sky-100 text-sky-800 px-2.5 py-0.5 rounded-full text-xs font-sans">25</span> Journal Papers
+                        </h3>
+                        <ol class="list-decimal list-outside ml-6 space-y-3.5 text-sm text-slate-700 leading-relaxed">
+                            <li class="pl-1.5">Zarei, M., Sattari, M., <strong>Bagheri, H.</strong>, Pashayi, M., Hybrid deep learning and fuzzy logic approach for marine oil spill detection and responsible vessel identification, <em>Neural Computing and Applications</em>, In Press.</li>
+                            <li class="pl-1.5">Hosseini, M., Irannejad, S., & <strong>Bagheri, H.</strong> (2026). High-Resolution Solar Energy Estimation in Urban Areas: Integrating LiDAR Data and Deep Learning for Sustainable Planning. <em>Journal of Renewable Energy and Environment</em>, e243966.</li>
+                            <li class="pl-1.5">Ganjirad, M., & <strong>Bagheri, H.</strong> (2026). Mapping urban heat risk in Tehran: a framework integrating hybrid downscaling, XAI, and fuzzy MCDM. <em>City and Environment Interactions</em>, 100447.</li>
+                            <li class="pl-1.5">Ganjirad, M., & <strong>Bagheri, H.</strong> (2026). Multi-Source Remote Sensing Fusion for European Tree Species Classification: Explore the Role of GEE-derived Indices by Explainable AI. <em>Advances in Space Research</em>. doi:10.1016/j.asr.2026.05.067, In Press.</li>
+                            <li class="pl-1.5">Sarvari, Z., Khosravi, I., & <strong>Bagheri, H.</strong> (2026). Quantifying drought impacts on wetlands in arid regions using a change-based drought severity index (WCDI) and Sentinel-1/2 data fusion within Google Earth Engine: evidence from two wetlands in central Iran. <em>Advances in Space Research</em>. doi:10.1016/j.asr.2026.04.096, In Press.</li>
+                            <li class="pl-1.5">Irannejad, S., & <strong>Bagheri, H.</strong> (2026). Gaussian mixture integration of CNN and transformer models for forest biomass estimation: A multi-sensor fusion approach with uncertainty quantification. <em>Smart Agricultural Technology</em>, 14, 102241.</li>
+                            <li class="pl-1.5">Irannejad, S., & <strong>Bagheri, H.</strong> (2026). Explaining Ecological Drivers and Management Implications of Forest Biomass: An Explainable Deep Learning Fusion of Remote Sensing and Climate Data. <em>Trees, Forests and People</em>, 24, 101154.</li>
+                            <li class="pl-1.5">Chajaei, F., & <strong>Bagheri, H.</strong> (2025). LOD1 3D city model from LiDAR: The impact of segmentation accuracy on quality of urban 3D modeling and morphology extraction. <em>Remote Sensing Applications: Society and Environment</em>, 38, 101534.</li>
+                            <li class="pl-1.5">Masoudian, E., Mirzaei, A., & <strong>Bagheri, H.</strong> (2025). Assessing wildfire susceptibility in Iran: Leveraging machine learning for geospatial analysis of climatic and anthropogenic factors. <em>Trees, Forests and People</em>, 19, 100774.</li>
+                            <li class="pl-1.5">Ganjirad, M., Delavar, M. R., <strong>Bagheri, H.</strong>, & Azizi, M. M. (2025). Optimizing urban critical green space development using machine learning. <em>Sustainable Cities and Society</em>, 120, 106158.</li>
+                            <li class="pl-1.5">Hosseini, M., & <strong>Bagheri, H.</strong> (2025). Improving the resolution of solar energy potential maps derived from global DSMs for rooftop solar panel placement using deep learning. <em>Heliyon</em>, 11(1).</li>
+                            <li class="pl-1.5">Okolie, C., Adeleke, A., Mills, J., Smit, J., Maduako, I., <strong>Bagheri, H.</strong>, … Wang, S. (2024). Assessment of explainable tree-based ensemble algorithms for the enhancement of Copernicus digital elevation model in agricultural lands. <em>International Journal of Image and Data Fusion</em>, 15(4), 430–460.</li>
+                            <li class="pl-1.5">Chajaei, F., & <strong>Bagheri, H.</strong> (2024). Machine learning framework for high-resolution air temperature downscaling using LiDAR-derived urban morphological features. <em>Urban Climate</em>, 57, 102102.</li>
+                            <li class="pl-1.5">Ganjirad, M., & <strong>Bagheri, H.</strong> (2024). Google Earth Engine-based mapping of land use and land cover for weather forecast models using Landsat 8 imagery. <em>Ecological Informatics</em>, 80, 102498.</li>
+                            <li class="pl-1.5">Mirzaei, A., <strong>Bagheri, H.</strong>, & Khosravi, I. (2023). Enhancing crop classification accuracy through synthetic SAR-optical data generation using deep learning. <em>ISPRS International Journal of Geo-Information</em>, 12(11), 450.</li>
+                            <li class="pl-1.5">Mirzaei, A., <strong>Bagheri, H.</strong>, & Sattari, M. (2023). Estimation of PM2.5 as a Harmful Environmental Hazard in Tehran by Fusion of MODIS Aerosol Products through a Machine Learning Approach. <em>Geography & Environmental Hazards</em>, 12(3).</li>
+                            <li class="pl-1.5"><strong>Bagheri, H.</strong> (2023). Using deep ensemble forest for high-resolution mapping of PM2.5 from MODIS MAIAC AOD in Tehran, Iran. <em>Environmental Monitoring and Assessment</em>, 195(3), 377.</li>
+                            <li class="pl-1.5">Mirzaei, A., <strong>Bagheri, H.</strong>, & Sattari, M. (2023). Data level and decision level fusion of satellite multi-sensor AOD retrievals for improving PM2.5 estimations, a study on Tehran. <em>Earth Science Informatics</em>, 16(1), 753–771.</li>
+                            <li class="pl-1.5"><strong>Bagheri, H.</strong> (2022). A machine learning-based framework for high resolution mapping of PM2.5 in Tehran, Iran, using MAIAC AOD data. <em>Advances in Space Research</em>, 69(9), 3333–3349.</li>
+                            <li class="pl-1.5">Attarzadeh, R., <strong>Bagheri, H.</strong>, Khosravi, I., Niazmardi, S., & Akbari, D. (2022). Segment-based fusion of multi-sensor multi-scale satellite soil moisture retrievals. <em>Remote Sensing Letters</em>, 13(12), 1260–1270.</li>
+                            <li class="pl-1.5">Zhu, X. X., Hu, J., Qiu, C., Shi, Y., Kang, J., Mou, L., … Others (including <strong>Bagheri H.</strong>). (2020). So2Sat LCZ42: A benchmark data set for the classification of global local climate zones [software and data sets]. <em>IEEE Geoscience and Remote Sensing Magazine</em>, 8(3), 76–89.</li>
+                            <li class="pl-1.5"><strong>Bagheri, H.</strong>, Schmitt, M., & Zhu, X. (2019). Fusion of multi-sensor-derived heights and OSM-derived building footprints for urban 3D reconstruction. <em>ISPRS International Journal of Geo-Information</em>, 8(4), 193.</li>
+                            <li class="pl-1.5"><strong>Bagheri, H.</strong>, Schmitt, M., d’Angelo, P., & Zhu, X. X. (2018). A framework for SAR-optical stereogrammetry over urban areas. <em>ISPRS Journal of Photogrammetry and Remote Sensing</em>, 146, 389–408.</li>
+                            <li class="pl-1.5"><strong>Bagheri, H.</strong>, Schmitt, M., & Zhu, X. X. (2018). Fusion of Urban TanDEM-X raw DEMs using variational models. <em>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</em>, 11(12), 4761–4774.</li>
+                            <li class="pl-1.5"><strong>Bagheri, H.</strong>, Sadeghian, S., & Sadjadi, S. Y. (2014). The assessment of using an intelligent algorithm for the interpolation of elevation in the DTM generation. <em>Photogrammetrie-Fernerkundung-Geoinformation</em>, 197–208.</li>
+                        </ol>
+                    </div>
+
+                    <!-- Others (26 - 29) -->
+                    <div>
+                        <h3 class="text-lg font-bold text-sky-800 mb-4 flex items-center gap-2 serif-heading">
+                            <span class="bg-sky-100 text-sky-800 px-2.5 py-0.5 rounded-full text-xs font-sans">4</span> Other Peer-Reviewed Publications
+                        </h3>
+                        <ol start="26" class="list-decimal list-outside ml-6 space-y-3.5 text-sm text-slate-700 leading-relaxed">
+                            <li class="pl-1.5">Hosseini, M., Irannejad, S., & <strong>Bagheri, H.</strong> (2026). Evaluation of U-Net3+ and Attention U-Net for Solar Energy Estimation on Urban Rooftops using LiDAR DSMs. <em>ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences</em>, 10, 379–387.</li>
+                            <li class="pl-1.5">Naeini, M. S., Abzal, A., Asgari, J., & <strong>Bagheri, H.</strong> (2026). A YOLO-Based Approach for Small-Object Defect Detection in High-Voltage Transmission Towers. <em>Earth Observation and Geomatics Engineering</em>, 9(1).</li>
+                            <li class="pl-1.5"><strong>Bagheri, H.</strong>, & Zali, M. H. (2022). Using deep generative models to estimate PM2.5 concentration from satellite AOD data collected from Tehran, Iran. <em>Scientific-Research Quarterly of Geographical Data</em>, 31(122), 7–22.</li>
+                            <li class="pl-1.5"><strong>Bagheri, H.</strong> and Sadeghian, S. (2015). Efficiency and Capability of using Artificial Intelligent Algorithms for Ortho-image and Digital Elevation Model Generation. <em>Journal of Soft Computing and Information Technology</em>, 4(3), 83–93.</li>
+                        </ol>
+                    </div>
+
+                    <!-- Books & Book Chapters (30 - 31) -->
+                    <div>
+                        <h3 class="text-lg font-bold text-sky-800 mb-4 flex items-center gap-2 serif-heading">
+                            <span class="bg-sky-100 text-sky-800 px-2.5 py-0.5 rounded-full text-xs font-sans">2</span> Books & Book Chapters
+                        </h3>
+                        <ol start="30" class="list-decimal list-outside ml-6 space-y-3.5 text-sm text-slate-700 leading-relaxed">
+                            <li class="pl-1.5"><strong>Bagheri, H.</strong> & Ganjirad, M. (2022). <em>Numerical Modeling of Weather: Theory and Software (Linux, WRF, ArcGIS)</em>, Academic Center for Education, Culture and Research, Tehran. (in Persian)</li>
+                            <li class="pl-1.5"><strong>Bagheri, H.</strong>, Sadjadi, S. Y., & Sadeghian, S. (2014). Exploring the role of genetic algorithms and artificial neural networks for interpolation of elevation in geoinformation models. Chapter in <em>Innovations in 3D Geo-Information Sciences</em> (pp. 107–121). Springer.</li>
+                        </ol>
+                    </div>
+
+                    <!-- Conference Presentations -->
+                    <div>
+                        <h3 class="text-lg font-bold text-sky-800 mb-4 flex items-center gap-2 serif-heading">
+                            <span class="bg-sky-100 text-sky-800 px-2.5 py-0.5 rounded-full text-xs font-sans">14</span> Conference Presentations
+                        </h3>
+                        <ol class="list-decimal list-outside ml-6 space-y-3.5 text-sm text-slate-700 leading-relaxed">
+                            <li class="pl-1.5">Manzouri, F., <strong>Bagheri, H.</strong> (2026). Performance Comparison of U-Net-Based Deep Learning Models in Amazon and Atlantic Forests Using Sentinel-2 Data. <em>The 10th Regional Conference on Climate Change and Global Warming</em>, Advanced Graduate University of Basic Sciences, Gavazang, Zanjan, Iran, 9-10 February 2026.</li>
+                            <li class="pl-1.5">Shahsavari, Z., <strong>Bagheri, H.</strong> (2026). Estimating urban tree biomass using LiDAR data and machine learning. <em>The 10th Regional Conference on Climate Change and Global Warming</em>, Advanced Graduate University of Basic Sciences, Gavazang, Zanjan, Iran, 9-10 February 2026.</li>
+                            <li class="pl-1.5">Zarei, F., <strong>Bagheri, H.</strong> (2026). Downscaling ERA5-Land air temperature using remote sensing and machine learning techniques. <em>The 10th Regional Conference on Climate Change and Global Warming</em>, Advanced Graduate University of Basic Sciences, Gavazang, Zanjan, Iran, 9-10 February 2026.</li>
+                            <li class="pl-1.5">Abzal, A., <strong>Bagheri, H.</strong>, Asgari, J., Shahriari, M. (2025). A YOLO-Based Approach for Small-Object Defect Detection in High-Voltage Transmission Towers. <em>The 8th ISPRS Geospatial Conference</em>, Tehran, Iran.</li>
+                            <li class="pl-1.5">Hosseini, M., Irannejad, S., <strong>Bagheri, H.</strong> (2025). Evaluation of U-Net3+ and Attention U-Net for Solar Energy Estimation on Urban Rooftops using LiDAR DSMs, <em>The 8th ISPRS Geospatial Conference</em>, Tehran, Iran.</li>
+                            <li class="pl-1.5"><strong>Bagheri, H.</strong>, Schmitt, M., & Zhu, X. X. (2019). Towards the Reconstruction of Prismatic Building Models by SAR-Optical Stereogrammetry. <em>2019 Joint Urban Remote Sensing Event (JURSE)</em>, 1–4. IEEE.</li>
+                            <li class="pl-1.5"><strong>Bagheri, H.</strong>, Schmitt, M., & Zhu, X. X. (2018). Urban TanDEM-X Raw DEM Fusion Based ON TV-L1 and Huber Models. <em>IGARSS 2018 - 2018 IEEE International Geoscience and Remote Sensing Symposium</em>, 7251–7254. IEEE.</li>
+                            <li class="pl-1.5"><strong>Bagheri, H.</strong>, Schmitt, M., d’Angelo, P., & Zhu, X. (2018). Exploring the applicability of semi-global matching for SAR-optical stereogrammetry of urban scenes. <em>The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences</em>, 42, 43–48.</li>
+                            <li class="pl-1.5"><strong>Bagheri, H.</strong>, Schmitt, M., & Zhu, X. X. (2017). Fusion of TanDEM-X and Cartosat-1 DEMs using TV-norm regularization and ANN-predicted weights. <em>2017 IEEE International Geoscience and Remote Sensing Symposium (IGARSS)</em>, 3369–3372. IEEE.</li>
+                            <li class="pl-1.5"><strong>Bagheri, H.</strong>, Schmitt, M., & Zhu, X. X. (2017). Uncertainty assessment and weight map generation for efficient fusion of TanDEM-X and Cartosat-1 DEMS. <em>The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences</em>, 42, 433–439.</li>
+                            <li class="pl-1.5"><strong>Bagheri, H.</strong>, & Sadeghian, S. (2014). Geometric rectification of high resolution satellite images using mathematical intelligent & classical modelling. <em>2014 Iranian Conference on Intelligent Systems (ICIS)</em>, 1–6. IEEE.</li>
+                            <li class="pl-1.5"><strong>Bagheri, H.</strong>, & Sadeghian, S. (2013). Ortho image and DTM generation with intelligent methods. <em>The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences</em>, 40, 475–480.</li>
+                            <li class="pl-1.5"><strong>Bagheri, H.</strong>, & Sadeghian, S. (2012). Intelligent Geometric Correction of Satellite Images (Case Study: Ikonos Image Using Genetic Algorithm). <em>Satellite Development for Sustainable Development Conference</em>, AmirKabir University, Tehran, Iran.</li>
+                            <li class="pl-1.5">Vajedian, S., & <strong>Bagheri, H.</strong> (2010). Optimal Design of Geodetic Network Using Genetic Algorithms. <em>EGU General Assembly Conference Abstracts</em>, 14654.</li>
+                        </ol>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-8 mt-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center text-xs">
+            <p>&copy; 2026 Dr.-Ing. Hossein Bagheri. All rights reserved.</p>
+            <p class="mt-2 sm:mt-0">Faculty of Civil Engineering and Transportation, Main Building, Room 11, University of Isfahan, Iran</p>
+        </div>
+    </footer>
+
+</body>
+</html>
